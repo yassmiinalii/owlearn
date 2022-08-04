@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { HeroSectionComponent } from './landingPage/components/hero-section/hero-section.component';
-import { PartnersComponent } from './landingPage/components/partners/partners.component';
-import { AboutUsComponent } from './landingPage/components/about-us/about-us.component';
-import { CTAComponent } from './landingPage/components/cta/cta.component';
-import { GraduatesWorkedInComponent } from './landingPage/components/graduates-worked-in/graduates-worked-in.component';
-import { TestimonialComponent } from './landingPage/components/testimonial/testimonial.component';
-import { CourseListComponent } from './landingPage/components/course/course-list/course-list.component';
-import { CourseItemComponent } from './landingPage/components/course/course-item/course-item.component';
+import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { PartnersComponent } from './components/partners/partners.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { CTAComponent } from './components/cta/cta.component';
+import { GraduatesWorkedInComponent } from './components/graduates-worked-in/graduates-worked-in.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { CourseListComponent } from './components/course/course-list/course-list.component';
+import { CourseItemComponent } from './components/course/course-item/course-item.component';
 
 @NgModule({
   declarations: [
