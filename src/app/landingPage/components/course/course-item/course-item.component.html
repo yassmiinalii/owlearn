@@ -1,0 +1,28 @@
+<div class="course-item">
+  <div class="course-item-container">
+    <div
+      class="course-item-image-container"style="background: url({{ course.image }});   background-size: contain;">
+      <!-- <img class="course-item-image" [src]="course.image" alt=""> -->
+      <div class="course-item-enrollUsers-container">
+        <img src="../../../../../assets/images/user.svg" alt="user icon" />
+        <p class="course-item-enrollUsers-number">{{ course.enrollUsers }}</p>
+      </div>
+    </div>
+    <div class="course-item-details-container">
+      <p class="course-item-details-date">{{ course.date }}</p>
+      <h3 class="course-item-details-name">{{ course.name }}</h3>
+      <p class="course-item-details-description">{{ course.description }}</p>
+      <div class="course-item-details-bottom-container">
+        <div class="course-item-details-cost-container">
+          <p class="course-item-details-cost">
+            {{ course.costAfterDiscount | currency }}
+          </p>
+          <p class="course-item-details-cost-discount">
+            {{ course.costBeforeDiscount | currency }}
+          </p>
+        </div>
+        <a class="course-item-btn">Show All</a>
+      </div>
+    </div>
+  </div>
+</div>

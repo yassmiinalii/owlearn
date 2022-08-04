@@ -1,0 +1,67 @@
+@import "/src/styles.scss";
+@import "/src/app/app.component.scss";
+
+.course {
+  &-container {
+    margin: 160px 100px;
+  }
+  &-title-container, &-category-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+  }
+
+  &-category-btn {
+    padding: 14px 30px;
+    background-color: transparent;
+    border: 1px solid rgba(35, 15, 15, 0.2);
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: $font-black-color;
+    cursor: pointer;
+    &:hover {
+      background-color: whitesmoke;
+    }
+  }
+  &-category-btn-active{
+    @extend .course-category-btn;
+    padding: 14px 30px;
+    border-color: transparent;
+    background-color: $primary-color;
+    border-radius: 100px;
+    color: $white-color;
+    &:hover {
+      background-color: $primary-dark-color;
+    }
+  }
+  &-list-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .course {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px ;
+    gap: 40px;
+  }
+
+  &-title-container, &-category-container {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+}}

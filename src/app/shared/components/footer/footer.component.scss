@@ -1,0 +1,73 @@
+@import "../../../../shared-style/variables.scss";
+
+.footer {
+  &-container {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    & a {
+      text-decoration: none;
+      color: $font-gray-color;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.4px;
+    }
+    & ul {
+      list-style: none;
+    }
+    font-size: 1.6em;
+    color: $font-blackgray-color;
+
+    & li {
+      padding-bottom: 20px;
+    }
+  }
+  &-titles {
+    padding-bottom: 30px;
+  }
+
+  &-event-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &-deails {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+    }
+  }
+  &-contact-desc {
+    max-width: 220px;
+    display: block;
+  }
+  &-contact {
+    color: #086bed !important;
+  }
+  &-rights-container {
+    background-color: $font-blackgray-color;
+    color: $white-color;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &-container {
+      margin: 40px;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+  letter-spacing: 0.4px;
+}

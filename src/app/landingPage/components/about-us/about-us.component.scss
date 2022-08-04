@@ -1,0 +1,61 @@
+@import "../../../../styles.scss";
+@import "../../../app.component.scss";
+
+.about {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    margin:160px 100px ;
+    gap: 80px;
+  }
+
+  &-title {
+    letter-spacing: 0.4px;
+  }
+
+  &-desc {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 165%;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+  }
+
+  &-text-container,
+  &-imag-container {
+    flex: 50%;
+  }
+  &-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px ;
+    gap: 40px;
+  }
+
+  &-text-container,
+  &-imag-container {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  &-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  &-image{
+    width: 100%;
+  }
+
+}}

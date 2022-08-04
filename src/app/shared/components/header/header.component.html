@@ -1,0 +1,23 @@
+
+<nav [class]="headerContainerClass">
+  <div class="header-logo-container">
+    <a routerLink="/">
+      <img src="../../../../assets/images/logo/logoIcon.svg" alt="logo icon" />
+      <img src="../../../../assets/images/logo/Owlearn.svg" alt="owlearn" />
+    </a>
+  </div>
+  <div [class]="menuClass" (click)="handleMenuClick()" >
+    <a routerLink="/" class="active" >Home</a>
+    <a routerLink="/">Bootcamp</a>
+    <a routerLink="/">Events</a>
+    <a routerLink="/">Article</a>
+    <a routerLink="/">Contact Us</a>
+    <div class="header-contact-btn-container">
+      <a href="mailto:yassmiinalii@gmail.com?Subject=Hello from Owlearn task"  target="_top" class="btn btn-border">Contact Us</a>
+    </div>
+  </div>
+
+  <div  [class]="iconContainerClass" (click)="handleMenuIcon()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+</nav>

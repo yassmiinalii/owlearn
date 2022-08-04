@@ -1,0 +1,85 @@
+@import "../../../../styles.scss";
+@import "../../../app.component.scss";
+
+.testimonial {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    margin: 160px 100px;
+    margin-bottom: 100px;
+    gap: 72px;
+  }
+
+  &-title {
+    letter-spacing: 0.4px;
+  }
+
+  &-desc {
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    color: $font-gray-color;
+    // padding-right: 40px;
+  }
+
+  &-text-container,
+  &-imag-container {
+    flex: 50%;
+  }
+  &-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    // align-items: flex-start;
+  }
+  &-student-name {
+    font-style: normal;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
+    color: #1c1d4e;
+  }
+  &-student-position {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    color: $font-lightgray-color;
+  }
+  &-student-details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      // margin: 40px;
+      gap: 40px;
+    }
+
+    &-text-container,
+    &-imag-container {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    &-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    &-image {
+      width: 100%;
+    }
+  }
+}

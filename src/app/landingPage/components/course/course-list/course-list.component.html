@@ -1,0 +1,28 @@
+<div class="course-container">
+  <div class="course-title-container">
+    <h2>Discover Course & Bootcamp</h2>
+    <a class="btn btn-border">Show All</a>
+  </div>
+  <div class="course-category-container">
+    <a [ngClass]="allCategoryActive ? 'course-category-btn-active' : 'course-category-btn'"
+    (click)="handleSelecteAllCategory()">All Program</a>
+    <div id = {{category.name}}
+
+    *ngFor="let category of categoryList; index as i"
+    [ngClass]="category.active ? 'course-category-btn-active' : 'course-category-btn'"
+     (click)="handleSelectedCategory(category.name)" >
+      <a  >{{category.name}}</a>
+    </div>
+
+  </div>
+  <hr>
+  <div class="course-list-container">
+    <div class="course-list-item-container" *ngFor="let course of courseList;">
+       <app-course-item [course]="course"></app-course-item>
+    </div>
+
+  </div>
+</div>
+
+ <!-- class="course-category-btn" -->
+

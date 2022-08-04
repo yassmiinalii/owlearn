@@ -1,0 +1,12 @@
+<div class="partners-container">
+  <div class="partners-text-container">
+    <h3 class="partners-text-desc">We partner with more than 10+ companies</h3>
+  </div>
+  <div class="partners-imag-container">
+    <img
+      *ngFor="let img of partnersImage; index as i"
+      [src]="img"
+      alt="partner images"
+    />
+  </div>
+</div>

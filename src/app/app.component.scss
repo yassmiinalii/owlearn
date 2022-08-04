@@ -1,0 +1,46 @@
+@import "../shared-style/variables.scss";
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: $primary-color;
+  border-radius: 6px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none;
+
+    color: $white-color;
+    cursor: pointer;
+
+  &:hover {
+    background-color: $primary-dark-color;
+  }
+}
+
+.btn-light{
+  background-color: $white-color;
+  color: $primary-color;
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
+
+.btn-border{
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  &:hover {
+    background-color: whitesmoke;
+  }
+  padding: 16px 40px;
+}
+
+
+h2{
+  font-weight: 600;
+    font-size: 4em;
+    line-height: 130%;
+    text-transform: capitalize;
+}

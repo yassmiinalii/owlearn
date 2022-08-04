@@ -1,0 +1,67 @@
+@import "../../../../styles.scss";
+@import "../../../app.component.scss";
+
+.header {
+
+  &-container {
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-menu-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    padding-top: 20px;
+    & a {
+      color: $font-black-color;
+      font-size: 1.6em;
+      text-decoration: none;
+      font-weight: 400;
+    }
+    & a:hover {
+      color: $primary-color;
+    }
+    & a.active {
+      text-decoration: underline;
+    }
+  }
+  &-Menuicon-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &-container {
+      justify-content: space-between;
+      margin: 40px;
+    }
+    &-container-resbonseve{
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0;
+    }
+    &-menu-container {
+      display: none;
+    }
+    &-Menuicon-container {
+      display: block;
+      font-size: 3em;
+      &-open{
+        display: none;
+      }
+    }
+    &-menu-container-resbonseve{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+
+  }
+}

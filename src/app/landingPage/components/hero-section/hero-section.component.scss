@@ -1,0 +1,81 @@
+@import "../../../../styles.scss";
+@import "../../../app.component.scss";
+
+.hero {
+  &-contaier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 100px;
+  }
+
+  &-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    // margin-left: 80px;
+  }
+  &-text-container,
+  &-img-container {
+    flex: 50%;
+  }
+
+  &-img-container {
+    max-width: 50vw;
+  }
+
+  &-text-title {
+    font-size: 6em;
+    font-weight: 800;
+    color: $font-black-color;
+    max-width: 540px;
+    text-transform: capitalize;
+  }
+  &-text-desc {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: $font-black-color;
+    max-width: 500px;
+  }
+  &-explore-path-container,
+  &-reviews-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  &-reviews-container {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    &-contaier {
+      flex-direction: column;
+    }
+    &-text-container,
+    &-img-container {
+      flex: 100%;
+      margin: 0px 40px;
+    }
+
+    &-img-container {
+      max-width: 100vw;
+    }
+    &-text-title {
+      max-width: 100vw;
+    }
+    &-text-desc {
+      max-width: 100vw;
+    }
+    &-img{
+      width: 100%;
+    }
+  }
+}
+// background-color: $admin-primary-color-light;
