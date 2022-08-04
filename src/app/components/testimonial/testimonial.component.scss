@@ -1,7 +1,6 @@
 @import "/src/styles.scss";
 @import "/src/app/app.component.scss";
 
-
 .testimonial {
   &-container {
     display: flex;
@@ -50,11 +49,10 @@
     letter-spacing: 0.4px;
     color: $font-lightgray-color;
   }
-  &-student-details-container{
+  &-student-details-container {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-
+    justify-content: space-between;
   }
 }
 
@@ -63,7 +61,7 @@
     &-container {
       display: flex;
       flex-direction: column;
-      // margin: 40px;
+      margin: 40px;
       gap: 40px;
     }
 
@@ -72,7 +70,9 @@
       flex: 100%;
       max-width: 100%;
     }
-
+    &-student-details-container{
+      gap: 40px;
+    }
     &-text-container {
       display: flex;
       flex-direction: column;

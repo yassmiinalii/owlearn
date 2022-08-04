@@ -128,10 +128,11 @@ export class CourseListComponent implements OnInit {
 
   handleSelecteAllCategory() {
     this.courseList = coursListArr;
+
     this.categoryList.forEach(function (categ) {
       categ.active = false;
     });
-    this.allCategoryActive = false;
+    this.allCategoryActive = true;
   }
 
   constructor() {}
