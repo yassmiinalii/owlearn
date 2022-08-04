@@ -1,9 +1,15 @@
 @import "../../../../styles.scss";
 @import "../../../app.component.scss";
 
+.nav{
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+}
 .header {
 
   &-container {
+    // width: 100%;
     margin-right: 100px;
     margin-left: 100px;
     display: flex;
